@@ -13,9 +13,9 @@ O presente documento consubstancia o relatório referente à idealização, conc
 
 ## 2. Introdução
 
-No corolário da ubiquidade dos dispositivos móveis, a compreensão aprofundada das especificidades de hardware e das versões de sistema operativo consubstancia um requisito fulcral, quer para propósitos de depuração (debugging) por parte de programadores, quer para a saciação da curiosidade tecnológica do utilizador comum. A **SysInfoAPP** emerge como uma solução minimalista e eficiente para colmatar esta premissa.
+No corolário dos dispositivos móveis, a compreensão aprofundada das especificidades de hardware e das versões de sistema operativo consubstancia um requisito fulcral, quer para propósitos de depuração (debugging) por parte de programadores, quer para a saciação da curiosidade tecnológica do utilizador comum. A **SysInfoAPP** emerge como uma solução minimalista e eficiente para colmatar esta premissa.
 
-A aplicação foi gizada com o intuito pedagógico e utilitário de demonstrar de que forma a framework de desenvolvimento Android providencia acesso direto às propriedades basilares do dispositivo, abdicando de permissões intrusivas ou operações assíncronas complexas na sua iteração embrionária, privilegiando a robustez e a celeridade.
+A aplicação foi visada com o intuito pedagógico e utilitário de demonstrar de que forma a framework de desenvolvimento Android providencia acesso direto às propriedades basilares do dispositivo, abdicando de permissões intrusivas ou operações assíncronas complexas na sua iteração embrionária, privilegiando a robustez e a celeridade.
 
 ## 3. Enquadramento Tecnológico
 
@@ -47,7 +47,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 }
 ```
 A génese da interface e a alocação de recursos ocorrem impreterivelmente no método primordial do ciclo de vida da `Activity`: `onCreate`. 
-*   A invocação de `super.onCreate(savedInstanceState)` garante a restauração e correta inicialização do estado pretérito da atividade.
+*   A invocação de `super.onCreate(savedInstanceState)` garante a restauração e correta inicialização do estado da atividade.
 *   A função `enableEdgeToEdge()` ilustra a adesão a práticas de design moderno, permitindo que a aplicação flua por todo o ecrã, incluindo as áreas subjacentes às barras do sistema, proporcionando uma experiência imersiva e limiar.
 *   `setContentView(R.layout.activity_main)` estabelece a ponte (inflação) entre a lógica de negócio e o ficheiro XML respetivo.
 
